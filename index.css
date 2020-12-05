@@ -1,1 +1,7 @@
-/* Put your style information here! */
+html {
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+}
+
+nav ul a {
+  font-size: 1.25rem;
+}
