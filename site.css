@@ -9,3 +9,13 @@ nav ul a {
 p {
   font-size: 1.15rem;
 }
+
+.banner {
+  width: 100%;
+  max-width: 100%;
+}
+
+.center-children {
+  display: flex;
+  justify-content: center;
+}
