@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="site.css">
+    <title>A/B Testing | First Last</title>
+  </head>
+  <body>
+    <img class="banner" src="abtesting/abtesting.png" alt="A/B Testing">
+    <div class="container">
+        <h3 class="center-align">A/B Testing Experiment</h3>
+        <div class="row">
+          <div class="col s12 m4">
+            <p class="center-align">
+              Strategies: User Research
+            </p>
+          </div>
+          <div class="col s12 m4">
+            <p class="center-align">
+              Timeline: Oct 2020
+            </p>
+          </div>
+          <div class="col s12 m4">
+            <p class="center-align">
+              Tools Used: Python, Statistics
+            </p>
+          </div>
+        </div>
+        <h4>The Problem</h4>
+        <p>
+          Visual design is a polarizing subject and is often subject to personal biases.
+          However, there are times when we need to be able to defintely say
+          "Design A is better than Design B." A/B testing and statistical analysis
+          are powerful tools that can help us to determine which designs are better.
+        </p>
+        <p>
+          For this experiment, I first created 2 versions of the same shopping site.
+          Users of the website were given a single task: add 150 dollars worth of
+          cacti to the shopping cart.
+        </p>
+        <h4>Forming Hypotheses</h4>
+        <p>
+          For this experiment, I was interested in 2 specific metrics. The first
+          metric was <b>time to completion</b> and the other metric was
+          <b>return rate</b>.
+        </p>
+        <p>
+          After specifying which metrics I was interested in, I then created a
+          hypotheses for each metric. In statistics, a hypothesis is actually
+          composed of 2 things: a <b>null hypothesis</b> and an
+          <b>alternative hypothesis</b>. A null hypothesis takes the position
+          that there is no difference between versions A and B of our website,
+          while an alternative hypothesis claims there is a difference.
+        </p>
+        <h5>Time to Completion:</h5>
+        <p><b>Null:</b> There is no significant difference in time to completion between
+        Site A and Site B.</p>
+        <p><b>Alternative:</b> Time to completion will be shorter for Site B
+        because the grid layout makes finding different items easier and therefore
+        should reduce the time needed to complete the task.</p>
+        <h5>Return Rate:</h5>
+        <p><b>Null:</b> There is no significant difference in return rate between Site A
+        and Site B.</p>
+        <p><b>Alternative:</b> There is a difference in return rate between Site A
+        and Site B because Site A highlights quantities and prices in red,
+        which should reduce how often a user needs to check the cart to get the
+        total price.</p>
+        <h4>All About Data</h4>
+        <p>
+          The process of data collection can be split into 3 distinct parts.
+          First, the actual collection of data. Next, the cleaning of data. And
+          finally, the processing of our cleaned data.
+        </p>
+        <h5>Data Collection</h5>
+        <p>
+          To collect our data, we added listeners to each sites' buttons.
+          When a button was clicked by a user, a new log line would be generated.
+        </p>
+        <h5>Data Cleaning</h5>
+        <p>
+          Once we have our raw logs, we need to clean our data. An example of a
+          potential bad log is a user that loaded the site but did not interact
+          with the site. These bad logs should be removed as they can skew our
+          results.
+        </p>
+        <h5>Data Analysis</h5>
+        <p>
+          The final step is to analyze our clean data, which we do using our
+          custom Python scripts. We can use the numerical outputs from our
+          Python scripts to reach important conclusions.
+        </p>
+        <h4>Results</h4>
+        <p>
+          To present my results, I made a short infographic.
+        </p>
+        <div class="center-children">
+          <img class="responsive-img" src="abtesting/infographic.png" alt="Infographic">
+        </div>
+        <h4>Takeaways</h4>
+        <ol>
+          <li>
+            Having a sufficient quantity of data is extremely important.
+            With the relatively limited number of users in my data set, it is
+            hard to get a statistically significant result. I think that if I had
+            more users and thus more data, I might have been able to obtain different
+            results.
+          </li>
+          <li>
+            It will be easier to get statistically significant results
+            using big design changes as opposed to smaller design changes.
+            As a whole, the differences between my Site A and Site B definitely existed,
+            but they were not drastic, which might explain why I did
+            not obtain statistically significant results for either metric.
+          </li>
+          <li>
+            Having a diverse pool of <b>new</b> users is important. Examining the data points
+            individually, I found that most users had similar completion times. I
+            hypothesize that part of this can be attributed to familiarity with the task.
+            Since most students tested multiple websites, it would be very easy to memorize
+            exactly how many plants of type D you need to add to the cart to reach 150 dollars.
+            This skew the results since the users are not "new users". 
+          </li>
+        </ol>
+        <p>
+          Although I am disappointed that I did not obtain statistically
+          significant results for either of my metrics, I still found that this
+          assignment was a great learning opportunity. I think A/B testing
+          and statistical analysis are very important tools, and I will definitely
+          use them in the future to analyze my designs.
+        </p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="nav.js"></script>
+  </body>
+</html>
