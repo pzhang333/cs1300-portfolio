@@ -8,14 +8,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="site.css">
-    <title>Iterative Design | First Last</title>
+    <title>StartPlaying.Games Iterative Design</title>
   </head>
   <body>
-    <img class="banner" src="iterative/iterative.png" alt="Iterative Design">
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">First Last</a>
+          <a href="#" data-target="mobile-menu" class="right sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://drive.google.com/file/d/1kwm2Tv-57dJPoOdTEqHcJ4OFYSjU8tMe/view">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-menu">
+      <li><a href="index.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="https://drive.google.com/file/d/1kwm2Tv-57dJPoOdTEqHcJ4OFYSjU8tMe/view">Resume</a></li>
+    </ul>
+    <img class="banner" src="iterative/iterative.png" alt="Iterative Design" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
     <div class="container">
-      <h3 class="center-align">StartPlaying.Games Iterative Design</h3>
-      <div class="row">
+      <h3 class="center-align" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">StartPlaying.Games Iterative Design</h3>
+      <div class="row" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <div class="col s12 m4">
           <p class="center-align">
             Strategies: UX/UI Design, Prototyping, User Research
@@ -32,112 +51,134 @@
           </p>
         </div>
       </div>
-      <h4>The Problem</h4>
-      <p>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">The Problem</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         Iterative design is a powerful process involving prototyping, testing, 
-        analyzing, and refining the product until a final design is created.
-        We wanted to put this technique into practice by designing a web interface
+        analyzing, and refining the product until a final design is reached.
+        For this project, I worked in a group with 2 other students from my UI/UX
+        class. We wanted to put this technique into practice by designing a web interface
         for Y-combinator startup <a href="https://startplaying.games/">StartPlaying.Games</a>,
         which aims to be an online marketplace for tabletop players to find games
         and/or game hosts. Unlike a traditional redesign, we wanted to create a
-        design for this site without referencing the original website.
+        design for this site without referencing the original website or any
+        existing assets.
       </p>
-      <h4>Sketching and Wireframing</h4>
-      <p>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Sketching and Wireframing</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         After getting acquainted with the startup's purpose and goals, the first step was
         to create sketches of the main pages that would be required. Each member
         of our group came up with our own vision of what the site would look like
         and created a set of basic sketches.
       </p>
-      <iframe class="center" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5012IXgdeUDbCAdjfk780t%2FIterative-Design-Sketches" allowfullscreen></iframe>
-      <p>
+      <iframe data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" class="center" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5012IXgdeUDbCAdjfk780t%2FIterative-Design-Sketches" allowfullscreen></iframe>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         After coming up with our sketches, we got together to combine our ideas
         and create a final wireframe.
       </p>
-      <img class="responsive-img" src="iterative/wireframe1.png" alt="Wireframe 1">
-      <img class="responsive-img" src="iterative/wireframe2.png" alt="Wireframe 2">
-      <h4>Hi-Fi Iterations</h4>
-      <p>
-        With our lo-fi prototype in hand, we were then ready to create a hi-fi 
+      <img data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" class="responsive-img" src="iterative/wireframe1.png" alt="Wireframe 1">
+      <img data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" class="responsive-img" src="iterative/wireframe2.png" alt="Wireframe 2">
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">First Hi-Fi Prototype</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+        With our lo-fi wireframes in hand, we were ready to create a hi-fi 
         mockup of the site. For the visual aesthetics, we envisioned a sleek design
-        with a color palette comfortable among gamers. Thus, we primarily developed
-        in dark mode, and used a single font throughout with varying sizes and
-        weights for a cleaner look. To maintain a consistent look, we also choose
+        with a color palette comfortable with gamers. Thus, we developed a dark
+        mode theme, and used a single font throughout the site with varying sizes and
+        weights for a cleaner look. To maintain a consistent appearance, we also choose
         to use a single highlight color, a light blue, to accent certain interface elements.
-        Below is our first hi-fi iteration.
+        Below is our first hi-fi iteration:
       </p>
-      <iframe class="figma" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FctH8HpP3n06NNF6JQi1w8L%2FIterative-Design-Crit%3Fnode-id%3D1%253A161%26scaling%3Dscale-down" allowfullscreen></iframe>
-      <h4>Critique and Next Iteration</h4>
-      <p>
+      <iframe data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" class="figma" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FctH8HpP3n06NNF6JQi1w8L%2FIterative-Design-Crit%3Fnode-id%3D1%253A161%26scaling%3Dscale-down" allowfullscreen></iframe>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Critique and Next Iteration</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         After finishing our first hi-fi prototype, we asked other students to
         give us feedback. We received a lot of constructive criticism on our
         design which allowed us to further improve our design. Some of the
-        feedback we received is below:
+        feedback we received includes:
       </p>
-      <ol>
+      <ol data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <li>Remove underlines on elements that are not clickable</li>
         <li>Have the name of the site in more places</li>
         <li>Use a primary call-to-action color</li>
         <li>Make it easier for users to book a game</li>
       </ol>
-      <p>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         Using this feedback, we came up with another set of mockups. 
         Here is an example of a change we made - notice how we bumped up the 
         hierarchy of the "Book Now" call-to-action, and rearranged sections to 
         add more information about the game:
       </p>
-      <div class="center-children">
+      <div data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" class="center-children">
         <img class="responsive-img" src="iterative/changes.png" alt="Changes">
       </div>
-      <p>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         Our improved prototype is shown below:
       </p>
-      <iframe class="figma" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FDfjXAp0tvCbh9EX3XJ32bl%2FIterative-Design-Final-Ver-DnD%3Fnode-id%3D20%253A298%26scaling%3Dscale-down" allowfullscreen></iframe>
-      <h4>User Testing</h4>
-      <p>
+      <iframe data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" class="figma" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FDfjXAp0tvCbh9EX3XJ32bl%2FIterative-Design-Final-Ver-DnD%3Fnode-id%3D20%253A298%26scaling%3Dscale-down" allowfullscreen></iframe>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">User Testing</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         With our much improved hi-fi design, we decided to take the prototype to
         <a href="https://www.usertesting.com/">UserTesting.com</a>, a site where
         real users can interact with and give feedback on the usability of a prototype.
         We provided each user with testing instructions and asked them questions
         about the usability of our site.
       </p>
-      <p>Testing Instructions:</p>
-      <ol>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Testing Instructions:</p>
+      <ol data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <li>Log into the website.</li>
         <li>Find a game to book.</li>
         <li>Book the game.</li>
         <li>Submit your game booking order.</li>
       </ol>
-      <p>Post-Testing Questions:</p>
-      <ol>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Post-Testing Questions:</p>
+      <ol data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <li>What frustrated you most about this site?</li>
         <li>What feature would you like added to the website?</li>
         <li>What did you like about the site?</li>
         <li>How difficult did you find it to book a game on a scale of 1-10, with 1 being easy and 10 being very difficult?</li>
       </ol>
-      <p>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         After gathering feedback from our user tests, we came up with the following
         changes to make in the future:
       </p>
-      <ol>
+      <ol data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <li>On a host page, add a list of games the specific host is hosting 
           along with a “Book Now” option to streamline workflow for booking a game.</li>
         <li>Add a confirmation page after booking a game.</li>
         <li>Upcoming booked games should show the host's name for further clarity.</li>
       </ol>
-      <h4>Takeaways</h4>
-      <p>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Takeaways</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         Creating a design completely from scratch and without using an existing
-        design is defintely a unique experience. I felt that I had more freedom
-        to experiment with different layouts and designs since I was making
-        everything from scratch. I also learned about how powerful a tool iterative
-        design and user testing are. I think our final design defintely would
-        not have been as successful without going through different iterations
-        of our hi-fi prototype and gathering feedback at each step in the
-        process.
+        design is defintely a unique experience. I felt that we had more freedom
+        to experiment with different layouts and designs since we were making
+        everything from scratch. I also learned that iterative design and user
+        testing are extremely power tools. I think our final design defintely
+        would not have been as successful without going through different
+        iterations of our hi-fi prototype and gathering feedback at each step in
+        the process.
       </p>
     </div>
+    <footer class="page-footer" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+      <div class="container">
+        <h5>Let's Connect!</h5>
+        <p>
+          Like my work? Please don't hesitate to contact me! I'm always looking
+          to meet new people. <a style="color:white; text-decoration: underline;" href="#">Email me here!</a>
+        </p>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p>
+            © 2020 First Last
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="nav.js"></script>
   </body>
 </html>
