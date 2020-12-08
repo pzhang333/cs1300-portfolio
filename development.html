@@ -8,14 +8,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="site.css">
     <title>Development | First Last</title>
   </head>
   <body>
-    <img class="banner" src="development/development.png" alt="Development">
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">First Last</a>
+          <a href="#" data-target="mobile-menu" class="right sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://drive.google.com/file/d/1kwm2Tv-57dJPoOdTEqHcJ4OFYSjU8tMe/view">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-menu">
+      <li><a href="index.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="https://drive.google.com/file/d/1kwm2Tv-57dJPoOdTEqHcJ4OFYSjU8tMe/view">Resume</a></li>
+    </ul>
+    <img class="banner" src="development/development.png" alt="League Champion Explorer Website" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
     <div class="container">
-      <h3 class="center-align">League Champion Explorer</h3>
-      <div class="row">
+      <h3 class="center-align" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">League Champion Explorer</h3>
+      <div class="row" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <div class="col s12 m4">
           <p class="center-align">
             Strategies: Development
@@ -32,33 +51,32 @@
           </p>
         </div>
       </div>
-      <h4>The Problem</h4>
-      <p>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">The Problem</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         React is one of the most popular JavaScript front-end libraries today.
         I believe the ability to use tools such as React and Node.js is just
-        as important as the ability to create interfaces.
+        as important as the ability to create intuitive interfaces.
       </p>
-      <p>
-        Therefore, for this project, I both designed and implemented the React
-        app. My goal was to create a list interface for a web application
-        that supported several features. Specifically, I wanted to support the
-        following:
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+        Therefore, for this project, I both designed and implemented my application.
+        My goal was to create a list interface for a website that supported several
+        features. Specifically, I wanted to support the following:
       </p>
-      <ol>
+      <ol data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <li>Filtering by Categories</li>
         <li>Sorting by Categories</li>
         <li>Aggregating Selected Items</li>
         <li>Displaying Items and Associated Data</li>
       </ol>
-      <h4>Creating The Application</h4>
-      <p>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Creating The Application</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         The first goal of my website was to create an application where users could
         explore League of Legends characters and decide which ones to buy. 
-        League of Legends is a popular online game that has (as of November 2020)
+        League of Legends is a popular online game that has (as of December 2020)
         152 unique characters. With so many choices, it can be difficult for 
         new players to decide what characters they might want to buy. 
       </p>
-      <p>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         In an attempt to solve this problem, my application provides convenient 
         filtering and sorting tools so a new user can easily find a champion 
         they are looking for, and provides a cart feature so that the user can
@@ -66,21 +84,21 @@
         and sorting can be combined in any number of ways so users have the 
         freedom to filter to the granularity that they require.
       </p>
-      <p>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         My other main goal was to create a React application with a clean and
-        intuitive architecture that future developers would also be able to use.
+        intuitive architecture that future developers would also be able to build off of.
         Therefore, while writing the code for my web app, I tried to follow 
-        best practices, such as separating distinct functionality into distinct
-        React components and commenting my code as necessary.
+        best practices, such as separating distinct functionality into separate
+        React components and commenting my code where necessary.
       </p>
-      <h4>Design Principles</h4>
-      <p>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Design Principles</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         Although the primary goal of this project was more development focused
         and less design focused, I still followed best design principles
         while creating my application.
       </p>
-      <h5>Visual Consistency</h5>
-      <ol>
+      <h5 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Visual Consistency</h5>
+      <ol data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <li>In character cards, the button is left left-aligned with the text.</li>
         <li>Class and Role Icons use the same, consistent gold color scheme.</li>
         <li>
@@ -88,13 +106,13 @@
           This also makes it easy to quickly add multiple characters to the cart.
         </li>
       </ol>
-      <h5>Color</h5>
-      <ol>
+      <h5 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Color</h5>
+      <ol data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <li>I chose a dark themed color palette with sufficient contrast.</li>
         <li>I also chose a bright blue as my primary color to highlight certain interface elements like buttons.</li>
       </ol>
-      <h5>Layout</h5>
-      <ol>
+      <h5 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Layout</h5>
+      <ol data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <li>The most important content, the character cards, are in the center of the page.</li>
         <li>
           The filter/sort menu and the cart are large and placed at the sides of the page.
@@ -103,23 +121,23 @@
         </li>
         <li>The page is responsive and the grid adapts to the size of the viewport.</li>
       </ol>
-      <h5>Typography</h5>
-      <ol>
+      <h5 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Typography</h5>
+      <ol data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <li>I chose to use a native font stack for my application.</li>
         <li>
           I use different text sizes to highlight importance. Larger text
           is more important in my app.
         </li>
       </ol>
-      <h4>Results</h4>
-      <p>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Results</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         To view my final application: <a href="https://young-island-47748.herokuapp.com/">click here!</a>
       </p>
-      <p>
-        To view the source code of my app, shoot me an email!</a>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+        To get a copy of the source code of my app, shoot me an email!</a>
       </p>
-      <h4>Takeaways</h4>
-      <p>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Takeaways</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         Developing a website using React and JavaScript instead of basic
         HTML/CSS is definitely a much different experience. In general,
         I felt that using React was a more "traditional" programming experience.
@@ -127,7 +145,7 @@
         similar to object-oriented programming. If I was using only HTML and
         CSS, I would have been forced to simply copy and paste my code.
       </p>
-      <p>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         Although developing a React application definitely has a learning curve,
         as you need to learn React specific syntax and rules, I think the
         overall development experience with React is much more enjoyable that
@@ -137,7 +155,27 @@
         more difficult than doing the same using React.
       </p>
     </div>
+    <footer class="page-footer" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+      <div class="container">
+        <h5>Let's Connect!</h5>
+        <p>
+          Like my work? Please don't hesitate to contact me! I'm always looking
+          to meet new people. <a style="color:white; text-decoration: underline;" href="#">Email me here!</a>
+        </p>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p>
+            © 2020 First Last
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="nav.js"></script>
   </body>
 </html>
