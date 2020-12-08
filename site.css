@@ -55,3 +55,7 @@ body {
 main {
   flex: 1 0 auto;
 }
+
+.bar-color {
+  background-color: #272932 !important;
+}
