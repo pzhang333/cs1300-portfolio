@@ -8,14 +8,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link rel="stylesheet" href="site.css">
-    <title>A/B Testing | First Last</title>
+    <title>A/B Testing Experiment</title>
   </head>
   <body>
-    <img class="banner" src="abtesting/abtesting.png" alt="A/B Testing">
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">First Last</a>
+          <a href="#" data-target="mobile-menu" class="right sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="https://drive.google.com/file/d/1kwm2Tv-57dJPoOdTEqHcJ4OFYSjU8tMe/view">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-menu">
+      <li><a href="index.html">Projects</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="https://drive.google.com/file/d/1kwm2Tv-57dJPoOdTEqHcJ4OFYSjU8tMe/view">Resume</a></li>
+    </ul>
+    <img class="banner" src="abtesting/abtesting.png" alt="A/B Testing" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
     <div class="container">
-      <h3 class="center-align">A/B Testing Experiment</h3>
-      <div class="row">
+      <h3 class="center-align" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">A/B Testing Experiment</h3>
+      <div class="row" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <div class="col s12 m4">
           <p class="center-align">
             Strategies: User Research
@@ -32,78 +51,81 @@
           </p>
         </div>
       </div>
-      <h4>The Problem</h4>
-      <p>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">The Problem</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         Visual design is a polarizing subject and is often subject to personal biases.
         However, there are times when we need to be able to defintely say
         "Design A is better than Design B." A/B testing and statistical analysis
         are powerful tools that can help us to determine which designs are better.
       </p>
-      <p>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         For this experiment, I first created 2 versions of the same shopping site.
         Users of the website were given a single task: add 150 dollars worth of
         cacti to the shopping cart.
       </p>
-      <h4>Forming Hypotheses</h4>
-      <p>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Forming Hypotheses</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         For this experiment, I was interested in 2 specific metrics. The first
         metric was <b>time to completion</b> and the other metric was
         <b>return rate</b>.
       </p>
-      <p>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         After specifying which metrics I was interested in, I then created a
         hypotheses for each metric. In statistics, a hypothesis is actually
         composed of 2 things: a <b>null hypothesis</b> and an
         <b>alternative hypothesis</b>. A null hypothesis takes the position
-        that there is no difference between versions A and B of our website,
-        while an alternative hypothesis claims there is a difference.
+        that there is no difference between versions A and B of my website,
+        while an alternative hypothesis claims there is a difference. I list
+        my hypotheses below.
       </p>
-      <h5>Time to Completion:</h5>
-      <p><b>Null:</b> There is no significant difference in time to completion between
+      <h5 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Time to Completion:</h5>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true"><b>Null:</b> There is no significant difference in time to completion between
       Site A and Site B.</p>
-      <p><b>Alternative:</b> Time to completion will be shorter for Site B
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true"><b>Alternative:</b> Time to completion will be shorter for Site B
       because the grid layout makes finding different items easier and therefore
       should reduce the time needed to complete the task.</p>
-      <h5>Return Rate:</h5>
-      <p><b>Null:</b> There is no significant difference in return rate between Site A
+      <h5 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Return Rate:</h5>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true"><b>Null:</b> There is no significant difference in return rate between Site A
       and Site B.</p>
-      <p><b>Alternative:</b> There is a difference in return rate between Site A
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true"><b>Alternative:</b> There is a difference in return rate between Site A
       and Site B because Site A highlights quantities and prices in red,
       which should reduce how often a user needs to check the cart to get the
       total price.</p>
-      <h4>All About Data</h4>
-      <p>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">All About Data</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         The process of data collection can be split into 3 distinct parts.
         First, the actual collection of data. Next, the cleaning of data. And
-        finally, the processing of our cleaned data.
+        finally, the processing of cleaned data.
       </p>
-      <h5>Data Collection</h5>
-      <p>
-        To collect our data, we added listeners to each sites' buttons.
-        When a button was clicked by a user, a new log line would be generated.
+      <h5 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Data Collection</h5>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+        To collect my data, I added listeners to each sites' buttons.
+        When a button was clicked by a user, a new log line would be generated
+        and then stored for later processing.
       </p>
-      <h5>Data Cleaning</h5>
-      <p>
-        Once we have our raw logs, we need to clean our data. An example of a
-        potential bad log is a user that loaded the site but did not interact
-        with the site. These bad logs should be removed as they can skew our
-        results.
+      <h5 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Data Cleaning</h5>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+        Once I have my raw data logs, I need to clean my data. This is an
+        important step because bad data can skew my final results. An example of
+        a bad log is one that shows a user who loaded the site but did not interact
+        with my site. Logs like this can result in false conclusions unless
+        they are removed from the data set.
       </p>
-      <h5>Data Analysis</h5>
-      <p>
-        The final step is to analyze our clean data, which we do using our
-        custom Python scripts. We can use the numerical outputs from our
-        Python scripts to reach important conclusions.
+      <h5 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Data Analysis</h5>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+        The final step is to analyze my clean data, which I did using
+        custom Python scripts that I previously wrote. I can then use the 
+        outputs from my Python scripts to reach conclusions about my experiment.
       </p>
-      <h4>Results</h4>
-      <p>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Results</h4>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         To present my results, I made a short infographic.
       </p>
       <div class="center-children">
-        <img class="responsive-img" src="abtesting/infographic.png" alt="Infographic">
+        <img data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" class="responsive-img" src="abtesting/infographic.png" alt="Infographic">
       </div>
-      <h4>Takeaways</h4>
-      <ol>
+      <h4 data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">Takeaways</h4>
+      <ol data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         <li>
           Having a sufficient quantity of data is extremely important.
           With the relatively limited number of users in my data set, it is
@@ -122,12 +144,13 @@
           Having a diverse pool of <b>new</b> users is important. Examining the data points
           individually, I found that most users had similar completion times. I
           hypothesize that part of this can be attributed to familiarity with the task.
-          Since most students tested multiple websites, it would be very easy to memorize
-          exactly how many plants of type D you need to add to the cart to reach 150 dollars.
-          This skew the results since the users are not "new users". 
+          I used other students in my class to test my websites, and other students did
+          the same. The result of this is that every student new exactly which buttons
+          to click to reach 150 dollars worth of cacti. This skew the results since 
+          the users are not representative of real users. 
         </li>
       </ol>
-      <p>
+      <p data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
         Although I am disappointed that I did not obtain statistically
         significant results for either of my metrics, I still found that this
         assignment was a great learning opportunity. I think A/B testing
@@ -135,7 +158,27 @@
         use them in the future to analyze my designs.
       </p>
     </div>
+    <footer class="page-footer" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true">
+      <div class="container">
+        <h5>Let's Connect!</h5>
+        <p>
+          Like my work? Please don't hesitate to contact me! I'm always looking
+          to meet new people. <a style="color:white; text-decoration: underline;" href="#">Email me here!</a>
+        </p>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p>
+            © 2020 First Last
+          </p>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="nav.js"></script>
   </body>
 </html>
